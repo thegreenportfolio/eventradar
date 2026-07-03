@@ -44,23 +44,33 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #03130a;
-        --bg-body: #000000;
-        --bg-card: #1c1c1e;
-        --border-card: #3a3a3c;
-        --pill-bg: #1c1c1e;
-        --pill-border: #3a3a3c;
-        --accent: #44d965;
-        --accent-soft: #062411;
-        --accent-dark: #2ba448;
-        --text-main: #f5f5f7;
-        --text-sub: #a1a1a6;
-        --chip-bg: #2c2c2e;
-        --chip-border: #3a3a3c;
-        --button-text: #020b05;
-      }
-    }
+  :root {
+    --bg: #03130a;
+    --bg-body: #000000;
+    --bg-card: #1c1c1e;
+    --border-card: #3a3a3c;
+    --pill-bg: #1c1c1e;
+    --pill-border: #3a3a3c;
+    --accent: #44d965;
+    --accent-soft: #062411;
+    --accent-dark: #2ba448;
+    --text-main: #f5f5f7;
+    --text-sub: #a1a1a6;
+    --chip-bg: #2c2c2e;
+    --chip-border: #3a3a3c;
+    --button-text: #020b05;
+  }
+
+  .web-pill {
+    background: #08192d;
+    border-color: #1f5f9f;
+    color: #8fc7ff;
+  }
+
+  .web-pill strong {
+    color: #b9dcff;
+  }
+}    
 
     * { box-sizing: border-box; }
 
@@ -193,6 +203,32 @@
       margin-top: 10px;
       font-size: 14px;
       color: var(--text-sub);
+    }
+
+    .web-pill-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .web-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #e8f2ff;
+  border: 1px solid #b7d7ff;
+  color: #1f6fd6;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+    .web-pill strong {
+  color: #0b63ce;
     }
 
     .intro {
@@ -436,9 +472,19 @@
   <a class="btn-secondary" href="#features">See key features</a>
 </div>
 
-      <div class="hero-note">
-        Built by The Green Portfolio. Simple event discovery, no account required.
-      </div>
+<div class="web-pill-row">
+  <a class="web-pill" href="https://event.thegreenportfolio.ca" target="_blank" rel="noopener">
+    🌐 Use the web version: <strong>event.thegreenportfolio.ca</strong>
+  </a>
+
+  <span class="web-pill">
+    🤖 Android coming soon
+  </span>
+</div>
+
+<div class="hero-note" style="margin-top:6px;">
+  Built by The Green Portfolio. Simple event discovery, no account required.
+</div>
     </div>
   </header>
 
