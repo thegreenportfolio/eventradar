@@ -205,26 +205,28 @@
       color: var(--text-sub);
     }
 
-    .web-pill-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
-    }
+   .web-pill-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
 
-    .web-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: #e8f2ff;
-  border: 1px solid #b7d7ff;
-  color: #1f6fd6;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
+.web-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 210px;      /* <-- add this */
+    height: 42px;          /* <-- add this */
+    gap: 8px;
+    padding: 0 18px;       /* <-- instead of 8px 14px */
+    border-radius: 999px;
+    background: #e8f2ff;
+    border: 1px solid #b7d7ff;
+    color: #1f6fd6;
+    font-size: 14px;
+    font-weight: 600;
 }
 
     .web-pill strong {
@@ -444,7 +446,7 @@
 
       <div class="hero-pill">
         <img class="pill-icon" src="./assets/event-radar-icon.png" alt="Event Radar icon" />
-        <span>Event Radar for iPhone</span>
+        <span>Event Radar for iPhone and Android</span>
       </div>
 
       <h1 class="hero-title">Event Radar</h1>
@@ -469,17 +471,27 @@
     Download on the App Store
   </a>
 
-  <a class="btn-secondary" href="#features">See key features</a>
+<a class="btn-secondary" href="#features">See key features</a>
 </div>
 
 <div class="web-pill-row">
-  <a class="web-pill" href="https://event.thegreenportfolio.ca" target="_blank" rel="noopener">
+  <a
+    class="web-pill"
+    href="https://event.thegreenportfolio.ca"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     🌐 Use Event Radar Web
   </a>
 
-  <span class="web-pill">
-    🤖 Android coming soon
-  </span>
+  <a
+    class="web-pill"
+    href="https://play.google.com/store/apps/details?id=com.thegreenportfolio.eventradar"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    🤖 Get it on Google Play
+  </a>
 </div>
 
 <div class="hero-note" style="margin-top:6px;">
